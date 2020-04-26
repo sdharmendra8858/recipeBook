@@ -3,7 +3,7 @@ import { PipeTransform, Pipe } from '@angular/core';
 @Pipe({
     name: 'capitalise'
 })
-export class Capitalise implements PipeTransform{
+export class CapitalisePipe implements PipeTransform{
     transform(value: string){
         var splitStr = value.toLowerCase().split(' ');
         for (var i = 0; i < splitStr.length; i++) {
